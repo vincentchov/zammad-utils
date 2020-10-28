@@ -1,11 +1,23 @@
+interface UserscriptConfig {
+  id: string;
+  name: string;
+  version: string;
+  description: string;
+  author: string;
+  hostname: string;
+  sitename: string;
+  namespace: string;
+  runAt: string;
+}
+
 export default {
-    id: "bootstrapped-userscript",
-    name: "Bootstrapped Userscript",
-    version: "0.1.0",
-    description: "A basic bootstrapped userscript.",
-    author: "John Smith",
-    hostname: "example.com",
-    sitename: "Example.com",
-    namespace: "mywebsite.example",
-    runAt: "document-start",
-} as const;
+  id: "zammad-utils",
+  name: "Zammad Utils",
+  version: "0.1.0",
+  description: "A bootstrapped userscript to help with data entry in Zammad.",
+  author: "Vincent Chov",
+  hostname: "vincentchov.com",
+  sitename: "Vincentchov.com",
+  namespace: "com.vincentchov",
+  runAt: "document-start",
+} as UserscriptConfig;

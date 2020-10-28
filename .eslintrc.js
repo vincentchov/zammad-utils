@@ -3,7 +3,6 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2020,
-    extraFileExtensions: [".js"],
     sourceType: "module", // Allows for the use of imports
   },
   extends: ["airbnb-typescript-prettier"],
